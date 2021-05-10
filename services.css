@@ -1,0 +1,103 @@
+.services{
+		/*border:2px solid red;*/
+		height: 85px;
+		margin-top: 15px;
+     background-color: black;
+		/*background-image: url(header3.webp);*/
+		/*opacity: 0.4;*/
+	}
+   .S_style{
+      font-size:53px;
+      /*margin-left: 220px;*/
+      text-align: center;
+      text-shadow: 2px 2px 0px white;
+      text-decoration: underline;
+      text-decoration-color: aliceblue;
+      color:red;
+    }
+.service{
+  /*border:1px solid red;*/
+  width: 26%;
+  display: inline-block;
+
+  margin-top:18px;
+  
+
+}
+.S_image{
+  width:90%;
+  height: 210px;
+  padding: 6px;
+ 
+}
+.bold{
+  font-size: 20px;
+  margin-left: 51px;
+}
+.service:hover{
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}
+
+  .M_name{
+  color:orangered;
+  font-size: 5rem;
+}
+.M_para{
+    margin-top: -12px;
+    font-size:2rem;
+  }
+@media (max-width: 425px){
+	.service{
+    /*border:1px solid red;*/
+    width: 100%;
+    text-align: left;
+  
+  }
+  .service:hover{
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}
+
+  .S_image {
+    /* width: 90%; */
+    height: 210px;
+    padding: 6px;
+    /* margin-left: 21px; */
+}
+.M_name{
+  font-size: 4rem;
+}
+ }
+ @media (max-width: 768px){
+	.service{
+    /*border:1px solid red;*/
+    width: 100%;
+    text-align: left;
+  
+  }
+  .service:hover{
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}
+
+  .S_image {
+    /* width: 90%; */
+    height: 284px;
+    padding: 6px;
+    margin-left: 41px;
+  }
+  .logo{
+      margin-top: -7rem;
+      margin-left: 15rem;
+    }
+    .float-right{
+      margin-top: -6rem;
+      margin-left: 20rem;
+
+    }
+  .description{
+    margin-left: 50px;
+  }
+  
+}

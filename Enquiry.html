@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="header.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script type="">
+		function emailval()
+		{
+			var a=document.form.mail.value;
+			if(a.indexOf('@')<=0)
+			{
+			  // document.getElementById("message").innerHTML()="Invalid @Position";
+			  alert("invalid @ position");
+			  return false;
+			}
+			else if((a.length-4)!='.')&&(a.length-3!='.')
+			{
+			  // document.getElementById("message").innerHTML="Invalid . Position";
+			  alert("Invalid . Position");
+				return false;
+			}
+		}
+		function myformvalidation()
+		{
+			var a=document.form.name.value;
+			var b=document.form.city.value;
+			if(a==null || a=="")
+			{
+				alert("Name can't be blank");
+				return false;
+			}
+			else if(a==null || a=="")
+			{
+				alert("City can't be a blank");
+				return false;
+			}
+		}
+	</script>
+
+<style type="text/css">
+	.About{
+		/*border:2px solid red;*/
+		height: 85px;
+		margin-top: 15px;
+		background-color: black;
+		/*background-image: url(header3.webp);*/
+		/*opacity: 0.4;*/
+	}
+    .A_style{
+      font-size:53px;
+      /*margin-left: 220px;*/
+      text-align: center;
+      text-shadow: 2px 2px 0px white;
+      text-decoration: underline;
+      text-decoration-color: aliceblue;
+      color:red;
+    }
+    .container{
+	background-color: azure;
+	/*width:50%;*/
+	/*border:1px solid black;*/
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+.Butn a{
+	color:white;
+}
+/*.form{
+    border:1px solid red;
+	width:57%;
+	float:right;
+	height:500px;
+	font-size:27px;
+	margin-top:36px;
+}*/
+</style>
+	
+</head>
+<body>
+	<div class="header">
+		<div class="row">
+		  <div class='col-lg-1'style="margin-top: 8px ">
+			<img src="r.png">
+		  </div>
+		  <div class="col-lg-3 logo">
+			<span style="color:orangered;font-size: 44px"><b>Rudra Interior</b></span><br>
+			<p style="margin-top: -12px;font-size:20px"> We Build Your Dream</p>
+		  </div>
+		  <div class="col-lg-3 col-sm-12"></div>
+		   <div class=" col-lg-3 col-sm-12">   
+			 <a href="https://api.whatsapp.com/send?phone=918459284454">
+			  <img class="whatsapp" src="chat.png" ></a>
+		   
+		   <div class="Social" >
+			  <a href="#" class="fa fa-facebook"></a>
+			  <a href="#" class="fa fa-twitter"></a>
+			  <a href="#" class="fa fa-google"></a>
+			  <a href="#" class="fa fa-linkedin"></a>
+			  <a href="#" class="fa fa-instagram"></a>
+		   
+		  </div>
+		  </div>
+		</div>
+	  
+	
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<button class="Butn"><a href="rudra.html" style="color:white">Home</a></button>
+			<button class="Butn"><a href="About.html" style="color:white">About</a></button>
+			<button class="Butn"><a href="services.html" style="color:white">Services</a></button>
+			<button class="Butn"><a href="Contact.html" style="color:white">Contact</a></button>
+			<button class="Butn"><a href="Gallary_rudra.html" style="color:white">Gallary</a></button>
+			<button class="Butn"><a href="client.html" style="color:white">Client</a></button>
+			<button class="Butn"><a href="Enquiry.html" style="color:white">Enquiry</a></button>
+			
+		</nav>
+		<!-- <div class="button1 row">
+			<button class="Butn"><a href="rudra.html"style="color:white">Home</a></button>
+			<button class="Butn"><a href="About.html"style="color:white">About</a></button>
+			<button class="Butn"><a href="services.html"style="color:white">Services</a></button>
+			<button class="Butn"><a href="Contact.html"style="color:white">Contact</a></button>
+			<button class="Butn"><a href="Gallary.html"style="color:white">Gallary</a></button>
+			<button class="Butn"><a href="client.html"style="color:white">Client</a></button>
+			<button class="Butn"><a href="Enquiry.html"style="color:white">Enquiry</a></button> 
+		 </div> -->
+	
+	  </div>
+<div class="About">
+	<p class="A_style"><b>Enquiry</b></p>
+</div>
+
+ <div class="container">
+	<div class="form">
+	<form  name="form"onsubmit="myformvalidation()">
+		<div class="row">
+			<div class="  col-lg-3">
+		<label style="font-size: 25px"> Name</label>
+		</div>
+		<div class="col-lg-4">
+		<input type="text" name="name"placeholder="Enter Your Name"value=""class="input">  
+		</div>
+		</div>
+		<div class="row" >
+			<div class="col-lg-3">
+		<label style="font-size: 25px">City</label>
+		</div>
+		<div class="col-lg-4">
+		<input type="text" name="city"placeholder="Enter Your Last Name"value=""class="input">  
+		</div>
+	</div>
+		<div class="row" >
+			<div class=" col-lg-3">
+		<label style="font-size: 25px">Email</label>
+		</div>
+		<div class="col-lg-4">
+		<input type="text" name="mail"placeholder="Enter Email"value=""class="input">  
+		</div>
+	</div>
+		<div class="row" >
+			<div class="  col-lg-3">
+		<label style="font-size: 25px">Phone</label>
+		</div>
+		<div class="col-lg-4">
+		<input type="text" name="Phone"placeholder="Mobile"value=""class="input">  
+		</div>
+	</div>
+		<div class="row" >
+			<div class="col-lg-3">
+		<label style="font-size: 25px">What you want to do?</label>
+		</div>
+
+		<div class="col-lg-4">
+		<select>
+			<OPTION>Gypsum celing</OPTION>
+			<option>Gypsum wall plastering</option>
+			<option>Painting</option>
+			<option>furniture Work</option>
+			<option>Kitchen Work</option>
+			<option>Sliding Window</option>
+		</select>
+	</div>
+	</div>
+		<div class="row" >
+		 <input type="submit" name="submit" value="SUBMIT"class="input"
+		 style="margin-top:25px;color:white;background-color:darkblue;font-size:30px">  
+		 </div>
+	</form>
+
+</div>  
+<div class="footer">
+	<div class="row ">
+	  <div class="col-lg-3 col-sm-12 col-xs-12 footer_div">
+		<p><b>Adress:</b><br>Mayur Niwas,Sports Sandoz Baug,kolshet,Thane(W).
+	  </div>
+	  <div class="col-lg-3 col-sm-12 col-xs-12 footer_div">
+		<p><b>Phone:</b><br>9921496732/9552624867</p>
+	  </div>
+	  <div class="col-lg-3 col-sm-12 col-xs-12 footer_div">
+		<p><b>Mail:</b><br>interiorsbyrudra@gmail.com</p>
+	  </div>
+	  <div class="col-lg-3 col-sm-12 col-xs-12 footer_div">
+		<p><b>Time:</b><br>Monday-Saturday 9am-6pm</p>
+	  </div>
+	</div>
+	  <div class="row">
+		<div class="col-lg-4 float-left">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		</div>
+		<div class="col-lg-4 ">
+		<span class="float-right" style="color:darkgray">&copy;TECHNOBRILLIANT LERNING SOLUTIONS,PUNE </span>
+		</div>
+	  </div>
+	</div>
+
+</body>
+</html>
